@@ -1,0 +1,90 @@
+body ,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100% 100%;
+    grid-template-columns: 17%;
+    grid-template-areas: 
+    "personal informacion informacion"
+    ;
+    }
+    .fila-personal{
+        grid-area: personal;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #logo{
+        height: 50%;
+        width: 100%;
+        background-image: url(./imagenes/jasil.jpg);
+        background-position: 100% 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        
+    }
+    #nombre{
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    #contacto1{
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #000046; 
+        background: -webkit-linear-gradient(to right, #000000, #140d13); 
+        background: linear-gradient(to right, #dedee0, #0acae4);
+    }
+.datos{
+    height: 29%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;    
+}
+.fila-informacion{
+    grid-area: informacion;
+}
+.informacion2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: #000000 solid 1px ;
+}
+.infor{
+    height: 45%;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    text-align: justify;
+    font-size: 20px;
+}
+#tex{
+    font-size: 25px;
+}
+#si{
+    height: 6%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
